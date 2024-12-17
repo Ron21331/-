@@ -1,0 +1,54 @@
+body{
+    background: url(../img/pole.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+main a {list-style: none;}
+
+main button:hover, main a:hover{
+    color: rgb(67, 143, 4);
+    text-decoration: none;
+    transform: scale(1.1);
+    transition: transform .6s ease;
+}
+
+
+main .hd{
+    width: 100%;
+    height: 30%;
+    padding: 2.5%;
+
+}
+
+main .hd button{
+    display: block;
+    float: right;
+    margin-left: 20px;
+}
+
+
+main .glav {
+    float: center;
+    width: 100%;
+    height: 100%;
+    color:black;
+    margin-top: 250px;
+    text-align: center;
+}
+
+
+main .hdSV{
+    width: 100%;
+    height: 30%;
+    padding: 2.5%;
+
+}
+
+main .hdSV button{
+    display: block;
+    float: left;
+    margin-right: 20px;
+}

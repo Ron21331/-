@@ -1,7 +1,7 @@
 from django.shortcuts import render
 
 
-def index(request):
+def glav(request):
     return render (request, "main1/glav.html")
 def carta(request):
     return render (request, "main1/carta.html")
