@@ -1,3 +1,4 @@
+/* основа */
 body{
     background: url(../img/pole.jpg);
     background-repeat: no-repeat;
@@ -6,30 +7,50 @@ body{
     background-attachment: fixed;
 }
 
-main a {list-style: none;}
 
+
+/* общие параметры кнопок */
 main button:hover, main a:hover{
-    color: rgb(67, 143, 4);
+    color: rgb(45, 100, 0);
     text-decoration: none;
     transform: scale(1.1);
     transition: transform .6s ease;
 }
+main button:active, main a:active, main h1:active{
+    background-color: blue;
+}
+main a{
+    text-decoration: none;
+    font-size: 120%;
+    color: rgb(0, 0, 0);
 
 
+}
+main i{
+    margin-left: 5px;
+    font-size: 18px;
+}
+
+
+
+/* главная */
 main .hd{
     width: 100%;
     height: 30%;
     padding: 2.5%;
 
 }
-
 main .hd button{
     display: block;
     float: right;
     margin-left: 20px;
+    border: none;
+    background-color: rgb(255, 255, 255);
+    border-radius: 7px;
+    cursor: pointer;
+    padding: 5px 8px;
+    font-weight: bold;
 }
-
-
 main .glav {
     float: center;
     width: 100%;
@@ -38,8 +59,23 @@ main .glav {
     margin-top: 250px;
     text-align: center;
 }
+main .glav button{
+    display: inline-block;
+    border: none;
+    background-color: rgb(113, 254, 81);
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 5px 8px;
+    font-weight: bold;
+}
+main .glav p{
+    font-size: 1.5em;
+    font-style: italic;
+}
 
 
+
+/* голова для кнопки "на главную" */
 main .hdSV{
     width: 100%;
     height: 30%;
@@ -47,8 +83,25 @@ main .hdSV{
 
 }
 
+
+
+
+/* кнопка на главную */
 main .hdSV button{
     display: block;
     float: left;
     margin-right: 20px;
+    border-radius: 7px;
+    cursor: pointer;
+    padding: 5px 8px;
+    border: none;
+    background-color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+main .hdSV i{
+    margin-right: 5px;
+}
+main .glav span{
+    font-size: 220%;
+    font-weight: bold;
 }
