@@ -234,16 +234,3 @@ main .glavres i{
     font-size: 700%;
     text-align: center;
 }
-
-main .glavres button{
-    display: block;
-    float: right;
-    margin-right: 60px;
-    margin-top: 60px;
-    border: none;
-    background-color: rgb(219, 219, 219);
-    border-radius: 7px;
-    cursor: pointer;
-    padding: 5px 8px;
-    font-weight: bold;
-}
