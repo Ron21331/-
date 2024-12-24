@@ -10,18 +10,20 @@
 <div class='glavcart'>
     <i class="fi fi-br-marker"></i>
     <p>Отметьте ваше место</p>
-    <button><a href="/apl/map/result/">Далее<i class="fi fi-br-arrow-right"></i></a></button>
+    
 
-<div id="myMap" style="width: 90%; height: 600px;"></div>
-<script type="text/javascript">
-    ymaps.ready(init)
-    function init(){
-        var myMap = new ymaps.Map ('myMap', {
-            center: [55.762860761282994,37.625745946572046],
-            zoom: 10,
-            type: "yandex#hybrid"
-        });
-    }
-</script>
+    <div id="myMap" style="width: 95%; height: 600px; margin-left:40px; margin-right: 40px;"></div>
+    <script type="text/javascript">
+        ymaps.ready(init)
+        function init(){
+            var myMap = new ymaps.Map ('myMap', {
+                center: [55.76,37.64],
+                zoom: 12,
+                type: "yandex#hybrid"
+            });
+        }
+    </script>
+
+    <button><a href="/apl/map/result/">Далее<i class="fi fi-br-arrow-right" style="font-size: 100%;"></i></a></button>
 </div>
 {% endblock %}
