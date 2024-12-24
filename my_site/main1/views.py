@@ -1,13 +1,13 @@
 from django.shortcuts import render
 
 
-def glav(request):
-    return render (request, "main1/glav.html")
-def carta(request):
-    return render (request, "main1/carta.html")
-def res(request):
-    return render (request, "main1/res.html")
-def Onas(request):
-    return render (request, "main1/Onas.html")
-def SV(request):
-    return render (request, "main1/SV.html")
+def main(request):
+    return render (request, "main1/main.html")
+def map(request):
+    return render (request, "main1/map.html")
+def result(request):
+    return render (request, "main1/result.html")
+def about(request):
+    return render (request, "main1/about.html")
+def communication(request):
+    return render (request, "main1/communication.html")

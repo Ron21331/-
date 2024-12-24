@@ -1,0 +1,27 @@
+{% extends "main1/layout.html" %}
+
+{% block title %}Карта{% endblock %}
+
+{% block body1 %}
+<div class='hdSV'>
+    <span>APL</span>
+    <button><a href="/apl"> <i class="fi fi-br-home"></i> На главную страницу</a></button>
+</div>
+<div class='glavcart'>
+    <i class="fi fi-br-marker"></i>
+    <p>Отметьте ваше место</p>
+    <button><a href="/apl/map/result/">Далее<i class="fi fi-br-arrow-right"></i></a></button>
+
+<div id="myMap" style="width: 90%; height: 600px;"></div>
+<script type="text/javascript">
+    ymaps.ready(init)
+    function init(){
+        var myMap = new ymaps.Map ('myMap', {
+            center: [55.762860761282994,37.625745946572046],
+            zoom: 10,
+            type: "yandex#hybrid"
+        });
+    }
+</script>
+</div>
+{% endblock %}
