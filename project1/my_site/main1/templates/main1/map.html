@@ -1,0 +1,48 @@
+{% extends "main1/layout.html" %}
+
+{% block title %}Карта{% endblock %}
+
+{% block body1 %}
+<div class='hdSV'>
+    <span>APL</span>
+    <button><a href="/apl"> <i class="fi fi-br-home"></i> На главную страницу</a></button>
+</div>
+<div class='glavcart'>
+    <i class="fi fi-br-marker"></i>
+    <p>Отметьте ваше место</p>
+    
+
+    <div id="map" style="width: 95%; height: 600px; margin-left:40px; margin-right: 40px;"></div>
+    <script type="text/javascript">
+        ymaps.ready(init);
+
+        function init() {
+            // Создание карты
+            var map = new ymaps.Map("map", {
+                center: [55.76,37.64], // Координаты центра карты (Москва)
+                zoom: 13,
+                type: 'yandex#hybrid'   
+            });
+
+            // Добавление красной метки
+            var redPlacemark = new ymaps.Placemark([55.267332, 35.963215], {
+                balloonContent: 'Красная метка'
+            }, {
+                preset: 'islands#redIcon'
+            });
+
+            // Добавление зеленой метки
+            var greenPlacemark = new ymaps.Placemark([55.267559, 35.963531], {
+                balloonContent: 'Зеленая метка'
+            }, {
+                preset: 'islands#greenIcon'
+            });
+
+            // Добавляем метки на карту
+            myMap.geoObjects.add(redPlacemark);
+            myMap.geoObjects.add(greenPlacemark);
+        }
+    </script>
+    <button><a href="/apl/map/result/">Далее<i class="fi fi-br-arrow-right" style="font-size: 100%;"></i></a></button>
+</div>
+{% endblock %}
